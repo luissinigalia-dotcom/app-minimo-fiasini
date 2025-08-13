@@ -8,7 +8,7 @@ st.markdown("""
     <style>
         /* Fundo da página */
         .stApp {
-            background-color: #ffffff;
+            background-color: #dde3eb;
             color: #0c0c21;
         }
         
@@ -20,7 +20,7 @@ st.markdown("""
             border: none;
         }
         div.stButton > button:first-child:hover {
-            background-color: #a63a3e;
+            background-color: #715ea5;
             color: white;
         }
 
