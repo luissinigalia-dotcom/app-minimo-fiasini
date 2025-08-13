@@ -1,0 +1,6 @@
+[theme]
+primaryColor = "#1d2557"              # Noite
+backgroundColor = "#ffffff"           # Branco
+secondaryBackgroundColor = "#dde3eb"  # Neblina
+textColor = "#0c0c21"                  # Sideral
+font = "sans serif"
