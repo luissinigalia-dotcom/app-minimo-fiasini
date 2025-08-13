@@ -1,6 +1,7 @@
 [theme]
-primaryColor = "#1d2557"              # Noite
-backgroundColor = "#ffffff"           # Branco
-secondaryBackgroundColor = "#dde3eb"  # Neblina
-textColor = "#0c0c21"                  # Sideral
+primaryColor = "#283171"     # Mar - tecnologia, confiança
+backgroundColor = "#ffffff"  # Branco - clareza, espaço
+secondaryBackgroundColor = "#dde3eb"  # Neblina - calma, possibilidades
+textColor = "#0c0c21"        # Sideral - poder, força
 font = "sans serif"
+
