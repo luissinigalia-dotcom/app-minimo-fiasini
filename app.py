@@ -1,9 +1,7 @@
 import streamlit as st
 
-st.title("Olá, Fiasini! 👋")
-st.write("Se você está vendo esta tela, o deploy funcionou. 🚀")
+st.title("🎨 Teste de Paleta Fiasini")
+st.write("Se você está vendo as cores da Fiasini aplicadas, o tema está funcionando.")
 
-st.subheader("Teste rápido de interação")
-nome = st.text_input("Seu nome", "")
-if nome:
-    st.success(f"Bem-vindo(a), {nome}!")
+if st.button("Botão de teste"):
+    st.success("O tema está configurado com sucesso!")
