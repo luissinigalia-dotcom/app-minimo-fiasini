@@ -1,20 +1,54 @@
 import streamlit as st
 
-st.set_page_config(page_title="Teste de Paleta Fiasini", page_icon="🎨", layout="wide")
+# Configurações da página
+st.set_page_config(page_title="App com Cores Fiasini", page_icon="💎", layout="wide")
 
-st.title("🎨 Paleta Fiasini – teste do tema")
-st.write("Se você vê botões/links em azul-escuro e painéis em cinza claro, o tema está aplicado via `.streamlit/config.toml`.")
+# CSS inline com as cores da Fiasini
+st.markdown("""
+    <style>
+        /* Fundo da página */
+        .stApp {
+            background-color: #ffffff;
+            color: #0c0c21;
+        }
+        
+        /* Cor dos botões */
+        div.stButton > button:first-child {
+            background-color: #c6464a;
+            color: white;
+            border-radius: 8px;
+            border: none;
+        }
+        div.stButton > button:first-child:hover {
+            background-color: #a63a3e;
+            color: white;
+        }
 
-with st.expander("Diagnóstico rápido"):
-    st.write("App mínimo carregado sem dependências extras.")
+        /* Cor dos checkboxes e outros elementos de input */
+        input[type=checkbox] {
+            accent-color: #c6464a;
+        }
 
-col1, col2, col3 = st.columns(3)
-with col1:
-    if st.button("Botão de teste"):
-        st.success("Tema aplicado! ✅")
-with col2:
-    st.link_button("Link (deverá usar a primaryColor)", "https://streamlit.io")
-with col3:
-    st.checkbox("Checkbox de teste", value=True)
+        /* Fundo dos containers secundários */
+        .block-container {
+            background-color: #ffffff;
+        }
 
-st.info("Este app NÃO usa CSS nem bibliotecas extras; a cor vem só do arquivo `.streamlit/config.toml`.")
+        /* Cor de links */
+        a {
+            color: #c6464a;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #a63a3e;
+            text-decoration: underline;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Conteúdo de teste
+st.title("💎 App com Cores da Fiasini")
+st.write("Este app aplica o tema diretamente via CSS no `app.py`.")
+st.button("Botão de Teste")
+st.checkbox("Exemplo de Checkbox")
+st.link_button("Visitar Site", "https://streamlit.io")
